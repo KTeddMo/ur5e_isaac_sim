@@ -7,7 +7,7 @@
 
     <!-- Import control_xacro -->
     <xacro:include filename="ur5e_gripper.ros2_control.xacro" />
-
+    <xacro:include filename="ur5e_gripper_hand.ros2_control.xacro" />
 
     <xacro:ur5e_gripper_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
 
