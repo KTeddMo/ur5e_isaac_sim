@@ -31,3 +31,4 @@ ur5e_arm_controller:
 ur5e_hand_controller:
   ros__parameters:
     joint: robotiq_85_left_knuckle_joint
+    joint: robotiq_85_right_knuckle_joint
