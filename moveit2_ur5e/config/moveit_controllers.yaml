@@ -28,3 +28,4 @@ moveit_simple_controller_manager:
     default: true
     joints:
       - robotiq_85_left_knuckle_joint
+      - robotiq_85_right_knuckle_joint
