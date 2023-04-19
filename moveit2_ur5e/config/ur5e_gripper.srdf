@@ -51,12 +51,16 @@
         <joint name="robotiq_85_right_knuckle_joint" value="0"/>
         <joint name="robotiq_85_left_inner_knuckle_joint" value="-3.14"/>
         <joint name="robotiq_85_right_inner_knuckle_joint" value="-3.14"/>
+        <joint name="robotiq_85_left_finger_tip_joint" value="-3.14"/>
+        <joint name="robotiq_85_right_finger_tip_joint" value="-3.14"/>
     </group_state>
     <group_state name="closed" group="ur5e_hand">
         <joint name="robotiq_85_left_knuckle_joint" value="0.8028"/>
         <joint name="robotiq_85_right_knuckle_joint" value="0.8028"/>
         <joint name="robotiq_85_left_inner_knuckle_joint" value="3.14"/>
         <joint name="robotiq_85_right_inner_knuckle_joint" value="3.14"/>
+        <joint name="robotiq_85_left_finger_tip_joint" value="3.14"/>
+        <joint name="robotiq_85_right_finger_tip_joint" value="3.14"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="ur5e_ee" parent_link="wrist_3_link" group="ur5e_hand"/>
