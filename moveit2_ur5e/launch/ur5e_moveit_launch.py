@@ -143,6 +143,5 @@ def generate_launch_description():
             joint_state_broadcaster_spawner,
             ur5e_arm_controller_spawner,
             ur5e_hand_controller_spawner,
-            generate_move_group_launch(moveit_config)
         ]
     )
