@@ -45,6 +45,7 @@ def generate_launch_description():
         )
         .to_moveit_configs()
     )
+    
 
     move_group_node = Node(
         package="moveit_ros_move_group",
@@ -137,5 +138,6 @@ def generate_launch_description():
             joint_state_broadcaster_spawner,
             ur5e_arm_controller_spawner,
             ur5e_hand_controller_spawner,
+            moveit_config,
         ]
     )
