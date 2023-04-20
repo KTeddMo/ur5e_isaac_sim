@@ -131,6 +131,7 @@ def generate_launch_description():
         [
             rviz_node,
             move_group_node,
+            moveit_config,
             ros2_control_hardware_type,
             robot_state_publisher,
             static_tf_node,
@@ -138,6 +139,6 @@ def generate_launch_description():
             joint_state_broadcaster_spawner,
             ur5e_arm_controller_spawner,
             ur5e_hand_controller_spawner,
-            moveit_config,
+            
         ]
     )
