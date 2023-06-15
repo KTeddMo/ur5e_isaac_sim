@@ -83,6 +83,7 @@ def generate_launch_description():
         name="static_transform_publisher",
         output="log",
         arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "base_link"],
+        remappings=[("/tf_static","ur5e_tf_static")],
     )
 
     
