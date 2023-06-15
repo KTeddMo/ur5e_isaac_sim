@@ -91,7 +91,6 @@ def generate_launch_description():
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="robot_state_publisher",
-        namespace='move',
         output="both",
         parameters=[moveit_config.robot_description],
         remappings=[("/tf","ur5e_tf")],
