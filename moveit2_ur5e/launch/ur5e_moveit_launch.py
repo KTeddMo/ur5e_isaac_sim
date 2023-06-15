@@ -94,6 +94,7 @@ def generate_launch_description():
         namespace='move',
         output="both",
         parameters=[moveit_config.robot_description],
+        remappings=[("/tf","ur5e_tf")],
     )
 
     # ros2_control using FakeSystem as hardware
