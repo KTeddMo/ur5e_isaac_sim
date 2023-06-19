@@ -83,7 +83,6 @@ def generate_launch_description():
         name="static_transform_publisher",
         output="log",
         arguments=["0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "world", "base_link"],
-        remappings=[("/tf_static","ur5e_tf_static")],
     )
 
     
@@ -94,7 +93,6 @@ def generate_launch_description():
         name="robot_state_publisher",
         output="both",
         parameters=[moveit_config.robot_description],
-        remappings=[("/tf","ur5e_tf")],
     )
 
     # ros2_control using FakeSystem as hardware
