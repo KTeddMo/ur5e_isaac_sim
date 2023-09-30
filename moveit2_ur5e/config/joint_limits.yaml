@@ -11,60 +11,60 @@ joint_limits:
   elbow_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 2.5
   robotiq_85_left_finger_tip_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   robotiq_85_left_inner_knuckle_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   robotiq_85_left_knuckle_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   robotiq_85_right_finger_tip_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   robotiq_85_right_inner_knuckle_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   robotiq_85_right_knuckle_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 0.1
   shoulder_lift_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 1.875
   shoulder_pan_joint:
     has_velocity_limits: true
     max_velocity: 3.1400000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 3.75
   wrist_1_joint:
     has_velocity_limits: true
     max_velocity: 6.2800000000000002
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 5.0
   wrist_2_joint:
     has_velocity_limits: true
     max_velocity: 6.2800000000000002
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 5.0
   wrist_3_joint:
     has_velocity_limits: true
     max_velocity: 6.2800000000000002
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true
+    max_acceleration: 5.0

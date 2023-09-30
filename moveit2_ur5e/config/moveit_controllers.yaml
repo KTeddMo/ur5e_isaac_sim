@@ -23,8 +23,8 @@ moveit_simple_controller_manager:
       - wrist_2_joint
       - wrist_3_joint
   ur5e_hand_controller:
-    type: FollowJointTrajectory
-    action_ns: follow_joint_trajectory
+    type: GripperCommand
+    action_ns: gripper_cmd
     default: true
     joints:
       - robotiq_85_left_knuckle_joint
