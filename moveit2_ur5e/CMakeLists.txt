@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.22)
 project(moveit2_ur5e)
 
 find_package(ament_cmake REQUIRED)
-
+add_executable(moveit2_ur5e src/hello_moveit.cpp)
+target_include_directories(moveit2_ur5e PUBLIC include)
 ament_package()
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
