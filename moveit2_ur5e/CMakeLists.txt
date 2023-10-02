@@ -7,7 +7,6 @@ target_include_directories(moveit2_ur5e PUBLIC include)
 
 ament_target_dependencies(
   moveit2_ur5e
-  "moveit_ros_planning_interface"
   "rclcpp"
 )
 
