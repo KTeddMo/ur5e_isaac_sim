@@ -327,9 +327,9 @@ int main(int argc, char* argv[])
   // Create the MoveIt MoveGroup Interface
   
   using moveit::planning_interface::MoveGroupInterface;
-  //auto move_group_interface = MoveGroupInterface(node, "ur5e_arm");
+  auto move_group_interface = MoveGroupInterface(node, "ur5e_arm");
   //auto move_group_interface = MoveGroupInterface(node, "ur_manipulator");
-  auto move_group_interface = MoveGroupInterface(node, "panda_arm");
+  //auto move_group_interface = MoveGroupInterface(node, "panda_arm");
   moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
   //addCollisionObjects(planning_scene_interface);
   //addCeiling(planning_scene_interface);
