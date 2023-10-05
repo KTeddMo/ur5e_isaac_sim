@@ -33,14 +33,12 @@ def generate_launch_description():
         MoveItConfigsBuilder("ur5e_gripper", package_name="moveit2_ur5e")
         .robot_description(
             file_path="config/ur5e_gripper.urdf.xacro",
-            mappings={
+             mappings={
                 "ros2_control_hardware_type": LaunchConfiguration(
                     "ros2_control_hardware_type"
                 )
             },
         )
-        .robot_description_semantic(file_path="config/ur5e_gripper.srdf")
-        .robot_description_kinematics(file_path="config/kinematics.yaml")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .planning_pipelines(
             pipelines=["ompl", "pilz_industrial_motion_planner"]
@@ -57,7 +55,6 @@ def generate_launch_description():
         executable="move_group",
         output="screen",
         parameters=[moveit_config.to_dict()],
-        arguments=["--ros-args", "--log-level", "info"],
     )
     rviz_base = os.path.join(
         get_package_share_directory("moveit2_ur5e"), "config"
@@ -106,7 +103,7 @@ def generate_launch_description():
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[moveit_config.robot_description, ros2_controllers_path],
-        output="screen",
+        output="both",
     )
 
     joint_state_broadcaster_spawner = Node(
@@ -114,6 +111,8 @@ def generate_launch_description():
         executable="spawner",
         arguments=[
             "joint_state_broadcaster",
+            "--controller-manager-timeout",
+            "300",
             "--controller-manager",
             "/controller_manager",
         ],
@@ -137,6 +136,5 @@ def generate_launch_description():
             ros2_control_node,
             joint_state_broadcaster_spawner,
             ur5e_arm_controller_spawner,
-            generate_move_group_launch(moveit_config),
         ]
     )
