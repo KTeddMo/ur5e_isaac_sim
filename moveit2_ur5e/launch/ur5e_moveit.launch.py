@@ -46,7 +46,7 @@ def generate_launch_description():
             pipelines=["ompl", "pilz_industrial_motion_planner"]
         )
         .planning_scene_monitor(
-        publish_robot_description=True, publish_robot_description_semantic=True, publish_trajectory_execution_event=True
+        publish_robot_description=True, publish_robot_description_semantic=True
         )
         .to_moveit_configs()
     )
@@ -74,6 +74,7 @@ def generate_launch_description():
             moveit_config.robot_description_semantic,
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
+            moveit_config.joint_limits,
         ],
     )
     # Static TF
