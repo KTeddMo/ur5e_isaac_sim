@@ -23,12 +23,6 @@ def generate_launch_description():
     #moveit_config = MoveItConfigsBuilder("panda", package_name="moveit_panda").to_moveit_configs()
     #return generate_demo_launch(moveit_config)
 
-    ros2_control_hardware_type = DeclareLaunchArgument(
-        "ros2_control_hardware_type",
-        default_value="ur5e",
-        description="ROS2 control hardware interface type to use for the launch file -- possible values: [mock_components, isaac]",
-    )
-
     moveit_config = (
         MoveItConfigsBuilder("ur5e_gripper", package_name="moveit2_ur5e")
         .robot_description(file_path="config/ur5e_gripper.urdf.xacro")
@@ -42,7 +36,6 @@ def generate_launch_description():
         .to_moveit_configs()
     )
     
-
     move_group_node = Node(
         package="moveit_ros_move_group",
         executable="move_group",
@@ -116,7 +109,6 @@ def generate_launch_description():
         executable="spawner",
         arguments=["ur5e_arm_controller", "-c", "/controller_manager"],
     )
-
 
 
     return LaunchDescription(
