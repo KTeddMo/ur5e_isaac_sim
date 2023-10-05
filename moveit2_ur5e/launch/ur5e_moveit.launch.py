@@ -46,7 +46,7 @@ def generate_launch_description():
             pipelines=["ompl", "pilz_industrial_motion_planner"]
         )
         .planning_scene_monitor(
-        publish_robot_description=True, publish_robot_description_semantic=True
+        publish_robot_description=True, publish_robot_description_semantic=True, publish_trajectory_execution_event=True
         )
         .to_moveit_configs()
     )
