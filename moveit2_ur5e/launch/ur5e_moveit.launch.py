@@ -31,14 +31,7 @@ def generate_launch_description():
 
     moveit_config = (
         MoveItConfigsBuilder("ur5e_gripper", package_name="moveit2_ur5e")
-        .robot_description(
-            file_path="config/ur5e_gripper.urdf.xacro",
-             mappings={
-                "ros2_control_hardware_type": LaunchConfiguration(
-                    "ros2_control_hardware_type"
-                )
-            },
-        )
+        .robot_description(file_path="config/ur5e_gripper.urdf.xacro")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .planning_pipelines(
             pipelines=["ompl", "pilz_industrial_motion_planner"]
