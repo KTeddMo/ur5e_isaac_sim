@@ -115,7 +115,6 @@ def generate_launch_description():
         [
             rviz_node,
             move_group_node,
-            ros2_control_hardware_type,
             robot_state_publisher,
             static_tf_node,
             ros2_control_node,
