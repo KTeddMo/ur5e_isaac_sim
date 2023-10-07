@@ -180,7 +180,7 @@
   <link name="wrist_3_link">
     <visual>
       <geometry>
-        <mesh filename="package://moveit_resources_ur5e_description/meshes/ur5e/visual/wrist3.dae"/>
+        <mesh filename="package://moveit_resources_ur5e_description/meshes/ur5e/visual/wrist3_og.dae"/>
       </geometry>
       <material name="LightGrey">
         <color rgba="0.7 0.7 0.7 1.0"/>
@@ -188,7 +188,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://moveit_resources_ur5e_description/meshes/ur5e/collision/wrist3.stl" scale="1.0 1.0 1.0"/>
+        <mesh filename="package://moveit_resources_ur5e_description/meshes/ur5e/collision/wrist3_og.stl" scale="1.0 1.0 1.0"/>
       </geometry>
     </collision>
     <inertial>
