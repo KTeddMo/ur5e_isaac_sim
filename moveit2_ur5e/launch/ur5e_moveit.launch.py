@@ -124,12 +124,6 @@ def generate_launch_description():
         arguments=["ur5e_arm_controller", "-c", "/controller_manager"],
     )
 
-    ur5e_hand_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["ur5e_hand_controller", "-c", "/controller_manager"],
-    )
-
 
 
     return LaunchDescription(
@@ -142,7 +136,6 @@ def generate_launch_description():
             ros2_control_node,
             joint_state_broadcaster_spawner,
             ur5e_arm_controller_spawner,
-            ur5e_hand_controller_spawner,
             generate_move_group_launch(moveit_config),
         ]
     )
