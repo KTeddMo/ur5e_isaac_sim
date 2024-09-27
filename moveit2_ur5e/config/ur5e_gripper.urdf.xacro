@@ -3,7 +3,7 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import ur5e_gripper urdf file -->
-    <xacro:include filename="$(find moveit_resources_ur5e_description)/urdf/ur5e_with_gripper.urdf" />
+    <xacro:include filename="$(find moveit_resources_ur5e_description)/urdf/ur5e_with_forcesensor_hand.urdf" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="ur5e_gripper.ros2_control.xacro" />
